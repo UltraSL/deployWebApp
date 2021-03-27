@@ -1,0 +1,20 @@
+<br>
+<h2 style ="text-align: center">Inbox Messages List </h2>
+<br>
+
+
+<div class="alert alert-success" role="alert" *ngFor="let message of messages">
+  <h4 class="alert-heading">From : {{message.name}}</h4>
+  <p> Message : {{message.message}}</p>
+  <hr>
+
+
+    <p class="mb-0"> Email : {{message.email}}  </p>
+
+    <button
+    type="button"
+    (click)="deletemessage(message._id)"
+    class="btn btn-danger"
+  >delete</button>
+
+</div>
