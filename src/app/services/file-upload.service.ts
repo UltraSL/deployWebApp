@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 export class FileUploadService {
 
   // API url
-  baseApiUrl = "http://localhost:3000/api/profiles"
+  baseApiUrl = "https://eschoolserver.herokuapp.com/api/profiles"
 
   constructor(private http:HttpClient) { }
 

@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class PaperService {
   private pastpapers: Pastpaper[] = [];
   private pastpapers$ = new Subject< Pastpaper []>();
-  readonly url = "http://localhost:3000/api/pastpapers";
+  readonly url = "https://eschoolserver.herokuapp.com/api/pastpapers";
 
   constructor(private http: HttpClient,) {}
 

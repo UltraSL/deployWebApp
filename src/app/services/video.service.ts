@@ -14,7 +14,7 @@ export class VideoService {
 
   private upload: Upload[] = [];
   private upload$ = new Subject<Upload[]>();
-  readonly url = "http://localhost:3000/api/upload";
+  readonly url = "https://eschoolserver.herokuapp.com/api/upload";
 
   constructor(private http: HttpClient) {}
 

@@ -12,7 +12,7 @@ import { Subject } from "rxjs";
 export class ProfileService {
   private profiles: Profile[] = [];
   private profiles$ = new Subject<Profile[]>();
-  readonly url = "http://localhost:3000/api/profiles";
+  readonly url = "https://eschoolserver.herokuapp.com/api/profiles";
 
   constructor(private http: HttpClient) {}
 
