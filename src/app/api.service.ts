@@ -8,7 +8,7 @@ export class ApiService {
   constructor( private http :HttpClient) {}
   public token:any;
     getDataApi(){
-      this.http.get('http://localhost:3000/post').subscribe(res=>{
+      this.http.get('https://eschoolserver.herokuapp.com/post').subscribe(res=>{
         console.log(res)
       })
     }
@@ -16,7 +16,7 @@ export class ApiService {
 
 
     registerAdmin(registerObj){
-      this.http.post('http://localhost:3000/register',registerObj).subscribe(res=>{
+      this.http.post('https://eschoolserver.herokuapp.com/register',registerObj).subscribe(res=>{
         console.log(res)
       })
     }

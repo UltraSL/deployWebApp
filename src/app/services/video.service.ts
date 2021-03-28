@@ -60,7 +60,7 @@ export class VideoService {
       });
   }
 
-  private _getUrl = 'http://localhost:3000/video/uploads/';
+  private _getUrl = 'https://eschoolserver.herokuapp.com/video/uploads/';
 
  // apiEndPoint  = 'http://localhost:3000';
 
@@ -75,43 +75,43 @@ deleteVideo(_id :any){
 
 
 uploadLink(uploadlink){//grade 06 video
-  this.http.post('http://localhost:3000/video/uploadlink',uploadlink).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink',uploadlink).subscribe(res=>{
         console.log(res)
       })
 
  }
  uploadLink07(uploadlink07){//grade 07 video link upload
-  this.http.post('http://localhost:3000/video/uploadlink07',uploadlink07).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink07',uploadlink07).subscribe(res=>{
         console.log(res)
       })
 
  }
  uploadLink8(uploadlink8){//grade 08 video link upload
-  this.http.post('http://localhost:3000/video/uploadlink8',uploadlink8).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink8',uploadlink8).subscribe(res=>{
         console.log(res)
       })
 
  }
  uploadLink9(uploadlink9){//grade 09 video link upload
-  this.http.post('http://localhost:3000/video/uploadlink9',uploadlink9).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink9',uploadlink9).subscribe(res=>{
         console.log(res)
       })
 
  }
  uploadLink10(uploadlink10){//grade 10 video link upload
-  this.http.post('http://localhost:3000/video/uploadlink10',uploadlink10).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink10',uploadlink10).subscribe(res=>{
         console.log(res)
       })
 
  }
  uploadLink11(uploadlink11){//grade 11 video link upload
-  this.http.post('http://localhost:3000/video/uploadlink11',uploadlink11).subscribe(res=>{
+  this.http.post('https://eschoolserver.herokuapp.com/video/uploadlink11',uploadlink11).subscribe(res=>{
         console.log(res)
       })
 
  }
 
- apiEndPoint  = 'http://localhost:3000/video/';
+ apiEndPoint  = 'https://eschoolserver.herokuapp.com/video/';
  getLinks(){
   return this.http.get(this.apiEndPoint+'/tasks');
  }
@@ -132,40 +132,40 @@ uploadLink(uploadlink){//grade 06 video
   return this.http.get(this.apiEndPoint+'/tasks11');
  }
 
- private _putUrl = 'http://localhost:3000/video/tasks/';
+ private _putUrl = 'https://eschoolserver.herokuapp.com/video/tasks/';
 
 
  getVideos06(){
    return this.http.get<any>(this._putUrl);
  }
- private _getUrl06 = 'http://localhost:3000/video/tasks/';
+ private _getUrl06 = 'https://eschoolserver.herokuapp.com/video/tasks/';
 
- private _putUrl7 = 'http://localhost:3000/video/tasks07/';
+ private _putUrl7 = 'https://eschoolserver.herokuapp.com/video/tasks07/';
  getVideos07(){
   return this.http.get<any>(this._putUrl7);
 }
-private _putUrl8 = 'http://localhost:3000/video/tasks8/';
+private _putUrl8 = 'https://eschoolserver.herokuapp.com/video/tasks8/';
  getVideos8(){
   return this.http.get<any>(this._putUrl8);
 }
-private _putUrl9 = 'http://localhost:3000/video/tasks9/';
+private _putUrl9 = 'https://eschoolserver.herokuapp.com/video/tasks9/';
  getVideos9(){
   return this.http.get<any>(this._putUrl9);
 }
-private _putUrl10 = 'http://localhost:3000/video/tasks10/';
+private _putUrl10 = 'https://eschoolserver.herokuapp.com/video/tasks10/';
  getVideos10(){
   return this.http.get<any>(this._putUrl10);
 }
-private _putUrl11 = 'http://localhost:3000/video/tasks11/';
+private _putUrl11 = 'https://eschoolserver.herokuapp.com/video/tasks11/';
  getVideos11(){
   return this.http.get<any>(this._putUrl11);
 }
-//private _getUrl = 'http://localhost:3000/api/tasks07/';
+//private _getUrl = 'https://eschoolserver.herokuapp.com/api/tasks07/';
 deleteVideo06(_id :any){
 
  return this.http.delete<any>(this._getUrl06 + _id )
 }
-private _putUrlD = 'http://localhost:3000/video/tasks7/';
+private _putUrlD = 'https://eschoolserver.herokuapp.com/video/tasks7/';
 deleteVideo7(_id :any){
 
   return this.http.delete<any>(this._putUrlD + _id )

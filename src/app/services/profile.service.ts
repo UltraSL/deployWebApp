@@ -52,7 +52,7 @@ export class ProfileService {
   }
 
 
-  private _putUrlD = 'http://localhost:3000/profiles/profiles/';
+  private _putUrlD = 'https://eschoolserver.herokuapp.com/profiles/profiles/';
   deleteAds(_id :any){
 
     return this.http.delete<any>(this._putUrlD + _id )

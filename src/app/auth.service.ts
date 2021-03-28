@@ -36,7 +36,7 @@ export class AuthService {
   }
 
 //////////////////////////////////admin
-private _putUrl7 = 'http://localhost:3000/api/userdetails/';
+private _putUrl7 = 'https://eschoolserver.herokuapp.com/api/userdetails/';
   userdetails(){
    return this.http.get<any>(this._putUrl7);
  }
