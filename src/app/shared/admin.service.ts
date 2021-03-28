@@ -49,7 +49,7 @@ export class AdminService {
 }*/
 
 
-endpoint: string = 'http://localhost:3000';
+endpoint: string = 'https://eschoolserver.herokuapp.com';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   currentUser = {};
 
@@ -85,7 +85,7 @@ endpoint: string = 'http://localhost:3000';
 
 
   sendImage(Image: FormData) {
-    return this.httpClient.post('http://localhost:3000/api/profileImage', Image);
+    return this.httpClient.post('https://eschoolserver.herokuapp.com/api/profileImage', Image);
   }
 
 

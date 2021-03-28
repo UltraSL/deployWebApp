@@ -62,7 +62,7 @@ export class VideoService {
 
   private _getUrl = 'https://eschoolserver.herokuapp.com/video/uploads/';
 
- // apiEndPoint  = 'http://localhost:3000';
+ // apiEndPoint  = 'https://eschoolserver.herokuapp.com';
 
 getVideos(){
   return this.http.get<any>(this._getUrl);
